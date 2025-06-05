@@ -1,0 +1,14 @@
+# Sample Jekyll configuration
+title: Sample Blog
+description: Prototype site generated from README
+baseurl: ""
+url: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 10
+paginate_path: "/page:num/"
