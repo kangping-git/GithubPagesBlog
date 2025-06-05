@@ -1,0 +1,13 @@
+{
+  "name": "github-pages-blog",
+  "version": "1.0.0",
+  "description": "Sample Eleventy blog",
+  "scripts": {
+    "build": "eleventy",
+    "css:build": "sass src/assets/css/style.scss public/assets/css/style.css"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "sass": "^1.69.5"
+  }
+}
