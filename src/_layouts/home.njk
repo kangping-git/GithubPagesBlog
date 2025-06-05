@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{% block content %}
+  <div class="post-list">
+    {% for post in collections.posts | reverse %}
+      <article class="post-card">
+        <a href="{{ post.url }}">
+          {% if post.data.thumbnail %}
+            <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" />
+          {% endif %}
+          <div class="post-info">
+            <h2>{{ post.data.title }}</h2>
+            <time datetime="{{ post.date }}">{{ post.date | date("yyyy-MM-dd") }}</time>
+            <p>{{ post.data.description }}</p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

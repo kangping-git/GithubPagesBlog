@@ -1,0 +1,9 @@
+{
+  "title": "Sample Blog",
+  "description": "A simple blog built with Eleventy",
+  "author": "Sample Author",
+  "url": "https://example.com",
+  "twitter_username": "example",
+  "github_username": "example",
+  "default_thumbnail": "/assets/images/ogp-cover.jpg"
+}

@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="inner">
+    <h1 class="site-logo">
+      <a href="{{ '/' | url }}">{{ site.title }}</a>
+    </h1>
+    <nav class="global-nav">
+      <ul>
+        {% for item in navigation %}
+          <li class="nav-item">
+            {% if item.subitems %}
+              <div class="dropdown">
+                <a href="#">{{ item.title }}</a>
+                <ul class="dropdown-menu">
+                  {% for sub in item.subitems %}
+                    <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% else %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+  </div>
+</header>
