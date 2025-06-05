@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Post"
-date: 2025-06-05 10:30:00 +0900
+date: 2025-06-05T10:30:00+09:00
 categories: ["Tech"]
 tags: ["Jekyll"]
 description: "First post description"
