@@ -1,0 +1,12 @@
+- title: Home
+  url: "/"
+- title: About
+  url: "/about.html"
+- title: Categories
+  subitems:
+    - title: Tech
+      url: "/categories/tech.html"
+- title: Tags
+  subitems:
+    - title: Jekyll
+      url: "/tags/jekyll.html"
