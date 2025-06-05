@@ -3,7 +3,7 @@
 {% block content %}
   <h1>タグ: {{ tag }}</h1>
   <div class="post-list">
-    {% for post in collections.posts | filter(post => post.data.tags && post.data.tags.includes(tag)) %}
+  {% for post in collections.posts | filterByTag(tag) %}
       <article class="post-card">
         <a href="{{ post.url }}">
           {% if post.data.thumbnail %}

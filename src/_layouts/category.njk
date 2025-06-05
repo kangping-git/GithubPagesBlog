@@ -3,7 +3,7 @@
 {% block content %}
   <h1>カテゴリ: {{ category }}</h1>
   <div class="post-list">
-    {% for post in collections.posts | filter(post => post.data.categories && post.data.categories.includes(category)) %}
+  {% for post in collections.posts | filterByCategory(category) %}
       <article class="post-card">
         <a href="{{ post.url }}">
           {% if post.data.thumbnail %}
